@@ -1,0 +1,134 @@
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata Diri</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-image: url('backround.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #fff;
+        }
+
+        .container {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            animation: fadeIn 1.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .image img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid rgba(255, 255, 255, 0.6);
+            transition: transform 0.3s;
+        }
+
+        .image img:hover {
+            transform: scale(1.1);
+        }
+
+        .biodata h2 {
+            margin-bottom: 15px;
+            font-size: 28px;
+            color: #fff;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 10px;
+        }
+
+        th {
+            width: 150px;
+            color: #ffffff;
+            font-weight: normal;
+            font-size: 16px;
+        }
+
+        td {
+            color: #ffffff;
+            font-size: 16px;
+        }
+
+        table tr:hover td {
+            color: #ffffff;
+        }
+
+        table tr:hover th {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Gambar -->
+        <div class="image">
+            <img src="foto.jfif" alt="Foto Profil">
+        </div>
+        
+        <!-- Biodata -->
+        <div class="biodata">
+            <h2>Biodata Diri</h2>
+            <table>
+                <tr>
+                    <th>Nama</th>
+                    <td>Wahyu A. Harahap</td>
+                </tr>
+                <tr>
+                    <th>Tanggal Lahir</th>
+                    <td>16 Desember 2003</td>
+                </tr>
+                <tr>
+                    <th>Alamat</th>
+                    <td>Jln. Perjuangan No.74 Pancing</td>
+                </tr>
+                <tr>
+                    <th>Jenis Kelamin</th>
+                    <td>Laki-laki</td>
+                </tr>
+                <tr>
+                    <th>Nomor Telepon</th>
+                    <td>+62 852 7022 2907</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
